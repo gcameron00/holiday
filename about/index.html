@@ -1,15 +1,141 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <title>About</title>
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>About — Lake Constance Family Travel Guide</title>
+    <meta
+      name="description"
+      content="About this Lake Constance family travel guide: who it's for, how it's organised, how it's built, and the disclaimer on accuracy."
+    />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script defer src="/assets/js/main.js"></script>
   </head>
   <body>
-    <h1>About</h1>
-    <p><a href="/">Back home</a></p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M3 22 C8 18 11 18 16 22 C21 26 24 26 29 22" fill="none" stroke="#0d7490" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M3 27 C8 23 11 23 16 27 C21 31 24 31 29 27" fill="none" stroke="#22d3ee" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="23" cy="9" r="4" fill="#f59e0b"/>
+          </svg>
+          <span>Lake Constance<small>Family guide · early July</small></span>
+        </a>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/things-to-do/">Things to Do</a></li>
+          <li><a href="/food-and-fun/">Food &amp; Fun</a></li>
+          <li><a href="/day-trips/">Day Trips</a></li>
+          <li><a href="/plan-your-trip/">Plan Your Trip</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">About</p>
+          <h1>About this guide</h1>
+          <p>What this site is, who it's for, and how it was built.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container prose">
+          <h2>What this is</h2>
+          <p>
+            This is a small, independent travel guide for families planning a
+            trip to <strong>Lake Constance</strong> (German: <em>Bodensee</em>)
+            in <strong>early July</strong>. The lake sits at the meeting point of
+            Germany, Austria and Switzerland, and makes an unusually varied
+            family destination: swimming and boats, gardens and castles, theme
+            parks and mountains — all within a short hop of one another.
+          </p>
+
+          <h2>Who it's for</h2>
+          <p>
+            It's written with families in mind, and especially
+            <strong>children around 10 years old</strong>. Throughout the site
+            you'll see small badges that flag what's particularly good for kids,
+            what works on a rainy day, what's best in summer, and what's free or
+            low-cost.
+          </p>
+
+          <h2>How it's organised</h2>
+          <ul>
+            <li><a href="/things-to-do/"><strong>Things to Do</strong></a> — family attractions, water &amp; outdoors, towns and rainy-day options.</li>
+            <li><a href="/food-and-fun/"><strong>Food &amp; Fun</strong></a> — local dishes, family-friendly eating, and evening entertainment.</li>
+            <li><a href="/day-trips/"><strong>Day Trips</strong></a> — five one-day explorations with sample timetables.</li>
+            <li><a href="/plan-your-trip/"><strong>Plan Your Trip</strong></a> — weather, packing, getting around and a sample week.</li>
+          </ul>
+
+          <h2>How it's built</h2>
+          <p>
+            The site is deliberately simple: hand-written
+            <strong>HTML, CSS and a little vanilla JavaScript</strong>, with no
+            framework and no build step. It's designed to be hosted on
+            <strong>Cloudflare Pages</strong> as a static site, so it loads fast
+            and is cheap (or free) to run. Pages adapt to light and dark mode and
+            work well on phones — handy when you're checking ideas on the go.
+          </p>
+          <p>
+            The full design notes and build plan live in the repository's
+            <a href="https://github.com/gcameron00/holiday">README and docs</a>.
+          </p>
+
+          <h2>A note on accuracy</h2>
+          <p>
+            This is an <strong>unofficial</strong> guide put together as a
+            planning aid. Opening hours, prices, ferry timetables and festival
+            dates change from year to year — please confirm details with the
+            official websites and local tourist information before you set out.
+            If you spot something out of date, the
+            <a href="https://github.com/gcameron00/holiday">source is on GitHub</a>.
+          </p>
+
+          <p class="mt-2"><a class="btn btn--primary" href="/things-to-do/">Start exploring →</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <a class="brand" href="/" style="margin-bottom:.6rem">
+            <span>Lake Constance<small>Family guide · early July</small></span>
+          </a>
+          <p class="muted">
+            An independent, unofficial travel guide for families heading to the
+            Bodensee. Always confirm opening times and prices before you go.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/things-to-do/">Things to Do</a></li>
+            <li><a href="/food-and-fun/">Food &amp; Fun</a></li>
+            <li><a href="/day-trips/">Day Trips</a></li>
+            <li><a href="/plan-your-trip/">Plan Your Trip</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about/">About this guide</a></li>
+            <li><a href="https://github.com/gcameron00/holiday">Source on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mt-2">
+        <small class="muted">© <span id="year">2026</span> Lake Constance family guide. Built as a static site for Cloudflare Pages.</small>
+      </div>
+    </footer>
   </body>
 </html>
